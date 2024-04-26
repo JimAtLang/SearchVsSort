@@ -20,5 +20,12 @@ public class Main {
             System.out.print(n + " ");
         }
         System.out.println(" ");
+
+
+        Searcher srch = new Searcher();
+
+        int position = srch.linearSearch(5823, data);
+
+        System.out.println("The value is at position " + position);
     }
 }
