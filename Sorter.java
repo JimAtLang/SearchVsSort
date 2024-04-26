@@ -8,8 +8,8 @@ public class Sorter {
                 }
             }
             int temp = data[smallestIndex];
-            data[smallestIndex] = data[j];
-            data[j] = temp;
+            data[smallestIndex] = data[i];
+            data[i] = temp;
         }
     }
 }
