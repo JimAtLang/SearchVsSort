@@ -8,7 +8,7 @@ public class Main {
     }
     public Main(){
         r = new Random();
-        dataSize = 1000;
+        dataSize = 10000;
         int[] data = new int[dataSize];
         for(int i=0;i<dataSize;i++){
             data[i] = r.nextInt(1000000);
@@ -23,6 +23,8 @@ public class Main {
 
         Searcher sch = new Searcher();
         int position = sch.linearSearch(12348, data);
+        Sorter st = new Sorter();
+        st.selectionSort(data);
         // System.out.println("The value 12348 is at position " + position);
     }
 }
